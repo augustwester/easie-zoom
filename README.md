@@ -7,9 +7,9 @@ Add some polish to your screen recording's zoom effects using easing functions! 
 * Is it easy to use? **Very, if you know Python.**
 * Are you completely insane for being so pedantic about timing functions? **Probably.**
 
-Below is an example of a screen recording I made of my app, Sidekick. Notice the zoom effects? They look nice because of this code.
+Below is an example of a screen recording I made of my app, [Sidekick](https://sidekiiick.com). Notice the zoom effects? They look nice because of this code.
 
-[VIDEO]
+https://github.com/augustwester/easie-zoom/assets/747600/a1f79633-3895-4d5e-954a-1f2a3a19a7de
 
 The video was made using the code in `demo.py`. More specifically:
 
@@ -32,5 +32,7 @@ frames, fps = generate_frames("sidekick-demo.mov", effects)
 # convert the numpy array to a video file
 frames_to_video(frames, fps, "out.mp4")
 ```
+
+Some transitions can look at bit "off" when there's too much zooming and panning going on at the same time. You can see that in the "zoom out" effect in the video above. Not sure how to solve this, but you're welcome to submit a pull request if you have a fix.
 
 [^1]: Do not get me started about OpenShot...
