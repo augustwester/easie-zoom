@@ -7,7 +7,7 @@ Add some polish to your screen recording's zoom effects using easing functions! 
 * Is it easy to use? **Very, if you know Python.**
 * Are you completely insane for being so pedantic about timing functions? **Probably.**
 
-Below is an example of a screen recording I made of my app, Sidekick. Notice the zoom effects? They look nice because of this code.
+Below is an example of a screen recording I made of my app, [Sidekick](https://sidekiiick.com). Notice the zoom effects? They look nice because of this code.
 
 [VIDEO]
 
