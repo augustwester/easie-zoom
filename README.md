@@ -33,4 +33,6 @@ frames, fps = generate_frames("sidekick-demo.mov", effects)
 frames_to_video(frames, fps, "out.mp4")
 ```
 
+Some transitions can look at bit "off" when there's too much zooming and panning going on at the same time. You can see that in the "zoom out" effect in the video above. Not sure how to solve this, but you're welcome to submit a pull request if you have a fix.
+
 [^1]: Do not get me started about OpenShot...
