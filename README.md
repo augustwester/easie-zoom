@@ -9,7 +9,7 @@ Add some polish to your screen recording's zoom effects using easing functions! 
 
 Below is an example of a screen recording I made of my app, [Sidekick](https://sidekiiick.com). Notice the zoom effects? They look nice because of this code.
 
-https://github.com/augustwester/easie-zoom/assets/747600/c283f936-a9c5-4a94-bee3-3a39f5507863
+https://github.com/augustwester/easie-zoom/assets/747600/a1f79633-3895-4d5e-954a-1f2a3a19a7de
 
 The video was made using the code in `demo.py`. More specifically:
 
