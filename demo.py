@@ -1,4 +1,4 @@
-from effect import ZoomEffect, Coord
+from effect import ZoomEffect
 from timing_functions import ease_in_out
 from zoom import generate_frames, frames_to_video
 
@@ -20,4 +20,5 @@ effects = [ZoomEffect(scale=2.4,
                       timing_fn=timing_fn)]
 
 frames, fps = generate_frames("sidekick-demo.mov", effects)
-frames_to_video(frames, fps, "out.mp4")
+frames, fps = frames[::2], fps / 2
+frames_to_video(frames, fps, "output.mp4")
