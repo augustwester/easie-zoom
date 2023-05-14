@@ -20,5 +20,4 @@ effects = [ZoomEffect(scale=2.4,
                       timing_fn=timing_fn)]
 
 frames, fps = generate_frames("sidekick-demo.mov", effects)
-frames, fps = frames[::2], fps / 2
 frames_to_video(frames, fps, "output.mp4")
