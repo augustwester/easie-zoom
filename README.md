@@ -27,7 +27,8 @@ effects = [ZoomEffect(scale=2.4, start=1, duration=0.5, coord=(0.5, 0.55), timin
            ZoomEffect(scale=1, start=8, duration=0.5, coord=(0.5, 0.5), timing_fn=timing_fn)]
 
 # produce the frames of the "fancy" video. this is just a numpy array.
-frames, fps = generate_frames("sidekick-demo.mov", effects)
+# when preview=True, the frames are shown on screen as they are processed.
+frames, fps = generate_frames("sidekick-demo.mov", effects, preview=True)
 
 # convert the numpy array to a video file
 frames_to_video(frames, fps, "out.mp4")

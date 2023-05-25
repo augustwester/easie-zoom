@@ -3,7 +3,7 @@ import numpy as np
 from effect import Transition, Coord
 from tqdm import tqdm
 
-def generate_frames(video_path, effects):
+def generate_frames(video_path, effects, preview=False):
     cap = cv2.VideoCapture(video_path)
     num_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -31,6 +31,12 @@ def generate_frames(video_path, effects):
         t = Transition(to, _from)
         scale, coord = t.state(to.progress(i))
         zoom_frame = zoom(frame, scale, coord=coord)
+        
+        if preview:
+            cv2.imshow("Frame", zoom_frame)
+            if cv2.waitKey(25) & 0xFF == ord('q'):
+                assert False
+        
         frames[i] = zoom_frame
     cap.release()
     
